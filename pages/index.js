@@ -32,7 +32,7 @@ export default function Home() {
   const handleDownload = async () => {
     setDownloading(true);
     try {
-      const response = await fetch("http://localhost:8000/download", {
+      const res = await fetch("https://d8856ba5-6ef9-4ba5-ac7e-23767b005e18-00-2esxzc9b3wr4y.sisko.replit.dev/download", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
